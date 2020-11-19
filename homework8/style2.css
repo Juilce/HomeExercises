@@ -1,0 +1,71 @@
+@font-face{
+    font-family: 'Miso Regular';
+    src: url('Miso.eot');
+    src: url('Miso.eot?#iefix') format('embedded-opentype'),
+    url('Miso.woff') format('woff'),
+    url('Miso.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #E2E7EC;
+}
+.wrapper1{
+    max-width: 1120px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.wrapper2{
+    max-width: 1120px;
+    display: flex;
+    margin: 0 auto; 
+    justify-content: space-between;
+}
+.spackages{
+    width: 360px;
+    background-color: #ffffff;
+    max-height: 550px;
+}
+.redCar{
+    max-width: 740px;
+}
+.fpackages:nth-child(2){
+    width: 355px;
+    background-color: #ffffff;
+    max-height: 545px;
+}
+.main{
+    display: flexbox;
+    width: 310px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: 'Miso Regular';
+    padding-bottom: 10px;
+}
+p{
+color: #818181;
+font-size: 18px;
+}
+h2{
+    font-size: 35px;
+}
+.hide{
+visibility: hidden;
+}
+#top{
+    width: 390px;
+    margin-top: -180px;
+    color: #ffffff;
+    padding-bottom: 30px;
+    margin-left: 40px;
+    font-family: 'Miso Regular';
+}
+
+footer{
+    text-align: center;
+    color: #818181;
+    margin-top: 80px;
+}
