@@ -26,6 +26,8 @@ max-width: 800px;
  text-align: center;
  font-size: 0; 
 }
+ul{
+ box-sizing: content-box;}
 .cities li{
     margin-left: -6px;
     display: inline-block;
