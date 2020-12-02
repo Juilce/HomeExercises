@@ -1,0 +1,106 @@
+@font-face{
+    font-family: 'Raleway', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+}
+@font-face{
+    font-family: 'Pacifico', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+}
+.main{
+    background-image: url(12_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.container{
+    max-width: 990px;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+   padding-top: 120px;
+   margin-top: -120px;
+   margin-bottom: 50px;
+}
+.header{
+    margin: 0 auto;
+    text-align: center;
+    color: #333333;
+}
+.header h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+.header p{
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 17px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+}
+.forma__add{
+    border: none;
+    max-width: 500px;
+}
+.inputs{
+    margin: 5px;
+    height: 50px;
+    background-color: #66cccc;
+    color: #ffffff;
+    border: none;
+    width: 460px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+.inputs:hover{
+    background-color: #00cccc;
+    border-left: 4px solid #336699;
+}
+textarea{
+    min-height: 200px;
+}
+::placeholder{
+    font-size: 20px;
+    color: #ffffff;
+}
+option{
+    font-size: 20px;
+}
+button{
+    color: #ffffff;
+    background-color: #336699;
+    padding: 5px 20px;
+    margin-left: 520px;
+   margin-top: -100px;
+}
+.info{
+    color: #333333;
+}
+.info h2{
+    text-transform: uppercase;
+    margin-bottom: -15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer{
+    height: 90px;
+    background-color: #333333;
+    margin: 0 auto;
+}
+.footer__info{
+    display: flex;
+    max-width: 1175px;
+    margin: 0 auto;
+    justify-content: space-around;
+    color: #ededed;
+}
+.footer__info h2{
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+span{
+    color: #ff3366;
+}
