@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.main{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    &__prev{
+        color: $secondColor;
+        font-size: $baseFontSize + 14px;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    &__photo{
+        margin: 0 auto;
+        width: 388px;
+        height: 388px;
+        border: 1px solid $secondColor;
+    }
+    &__info{
+        margin: 0 auto;
+        text-align: center;
+        width: 420px;
+    }
+    &__separator{
+        @extend .sep;
+        &:before{
+            height: 500px;
+            margin-top: -70px;
+        }
+    }
+    &__next{
+        font-size: $baseFontSize + 14px;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    
+}
+.move__back{
+    color: $secondColor;
+}
+.details{
+    &__name{
+        
+        font-family: 'Roboto', sans-serif;
+        font-size: $baseFontSize + 10px;
+        color: $mainColor;
+        font-weight: $baseFontWeight + 300;
+        line-height: $lineHeight + 15px;
+    }
+    &__separator{
+        @extend .separator;
+        &:after{
+            width: 0;
+        }
+        padding: 20px;
+    }
+    &__position{
+        color: $titleColor;
+        font-size: $baseFontSize +4;
+        margin-bottom: 30px;
+    }
+    &__link{
+        padding: 2%;
+        border: 1px solid $titleColor;
+        border-radius: 50%;
+        color: $titleColor;
+        font-size: $baseFontSize - 6px;
+        
+        &:nth-child(1){
+            padding: 8px 11px;
+        }   
+    }
+    &__desc{
+        margin-top: 30px;
+        font-size: $baseFontSize - 4px;
+        line-height: $lineHeight;
+        margin-bottom: 10px;
+    }
+    &__separation{
+        @extend .separator;
+        &:after{
+            width: 0;
+        }
+        &:before{
+            width: 50px;
+            border-top: 5px dashed $secondColor;
+        }
+    }
+    &__but{
+        margin-top: 15px;
+        font-weight: 700;
+        border-left: 1px solid $secondColor;
+        
+    }
+}
+.image{
+    &__first{
+        width: 100px;
+        height: 100px;
+        border-top: 1px solid $secondColor;
+        border-left: 1px solid $secondColor;
+        position: absolute;
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+    &__second{
+        width: 100px;
+        height: 100px;
+        border-top: 1px solid $secondColor;
+        border-right: 1px solid $secondColor;
+        position: absolute;
+        margin-top: -20px;
+        right: 960px;
+    }
+    &__third{
+        width: 100px;
+        height: 100px;
+        border-bottom: 1px solid $secondColor;
+        border-right: 1px solid $secondColor;
+        position: absolute;
+        bottom: 78px;
+        right: 960px;
+    }
+    &__fourth{
+        width: 100px;
+        height: 100px;
+        border-bottom: 1px solid $secondColor;
+        border-left: 1px solid $secondColor;
+        position: absolute;
+        bottom: 78px;
+        margin-left: -20px;
+    }
+}
+.more{
+    &__inf{
+    border-bottom: 1px solid $secondColor;
+    border-right: 1px solid $secondColor;
+    border-top: none;
+    border-left: none;
+    background-color: $whiteColor;
+    }
+    &__text{
+        font-weight:$baseFontWeight + 200;
+        color: $mainColor;
+        font-size: $baseFontSize - 5;
+        padding: 5px;
+    }
+
+}
+
+.go__front{
+    color: $secondColor;
+}
