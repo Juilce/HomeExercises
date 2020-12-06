@@ -37,7 +37,7 @@ body {
 }
 .header__subtitle {
   font-family: "Roboto", sans-serif;
-  font-size: 60px;
+  font-size: 3.75rem;
   color: #ffcc00;
   text-align: center;
   margin-bottom: 55px;
@@ -63,12 +63,10 @@ body {
   margin-top: 100px;
   align-items: center;
 }
-.main__prev {
-  color: #ffcc00;
-  font-size: 30px;
-}
-.main__prev:hover {
-  transform: scale(1.5);
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
 }
 .main__photo {
   margin: 0 auto;
@@ -76,20 +74,43 @@ body {
   height: 388px;
   border: 1px solid #ffcc00;
 }
+@media screen and (max-width: 375px) {
+  .main__photo {
+    width: inherit;
+    height: inherit;
+  }
+}
 .main__info {
   margin: 0 auto;
   text-align: center;
   width: 420px;
 }
+@media screen and (max-width: 768px) {
+  .main__info {
+    width: inherit;
+  }
+}
 .main__separator:before {
   height: 500px;
   margin-top: -70px;
 }
-.main__next {
-  font-size: 30px;
+@media screen and (max-width: 768px) {
+  .main__separator:before {
+    transform: rotate(90deg);
+    height: 100px;
+    margin-top: 0;
+  }
 }
-.main__next:hover {
+.main__prev, .main__next {
+  font-size: 1.875rem;
+}
+.main__prev:hover, .main__next:hover {
   transform: scale(1.5);
+}
+@media screen and (max-width: 992px) {
+  .main__prev, .main__next {
+    display: none;
+  }
 }
 
 .move__back {
@@ -98,7 +119,7 @@ body {
 
 .details__name {
   font-family: "Roboto", sans-serif;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: #666666;
   font-weight: 800;
   line-height: 39px;
@@ -111,7 +132,7 @@ body {
 }
 .details__position {
   color: #898f8f;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 30px;
 }
 .details__link {
@@ -130,6 +151,11 @@ body {
   line-height: 24px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 375px) {
+  .details__desc {
+    font-size: 14px;
+  }
+}
 .details__separation:after {
   width: 0;
 }
@@ -142,6 +168,7 @@ body {
   font-weight: 700;
   border-left: 1px solid #ffcc00;
 }
+
 .image {
   position: relative;
 }
@@ -180,6 +207,10 @@ body {
   position: absolute;
   bottom: -20px;
   left: -20px;
+}
+.image__person img {
+  width: 100%;
+  height: auto;
 }
 
 .more__inf {
