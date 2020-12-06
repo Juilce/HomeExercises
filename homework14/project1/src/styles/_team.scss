@@ -18,7 +18,7 @@ body{
     }
     &__subtitle{ 
         font-family: 'Roboto', sans-serif;
-        font-size: $baseFontSize + 44px;
+        font-size: rem-calc(60px);
         color: $secondColor;
         text-align: center;
         margin-bottom: 55px;

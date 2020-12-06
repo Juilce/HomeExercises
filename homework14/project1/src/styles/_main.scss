@@ -5,35 +5,53 @@
     display: flex;
     margin-top: 100px;
     align-items: center;
-    &__prev{
-        color: $secondColor;
-        font-size: $baseFontSize + 14px;
-        &:hover{
-            transform: scale(1.5);
-        }
+    
+    @include _768{
+        flex-direction: column;
     }
+
     &__photo{
         margin: 0 auto;
         width: 388px;
         height: 388px;
         border: 1px solid $secondColor;
+
+        @include _375{
+            width: inherit;
+            height: inherit;
+        }
     }
     &__info{
         margin: 0 auto;
         text-align: center;
         width: 420px;
+
+        @include _768{
+            width: inherit;
+        }
+
     }
     &__separator{
         @extend .sep;
         &:before{
             height: 500px;
             margin-top: -70px;
+
+            @include _768{
+                transform: rotate(90deg);
+                height: 100px;
+                margin-top: 0;
+            }
         }
     }
+    &__prev,
     &__next{
-        font-size: $baseFontSize + 14px;
+        font-size: rem-calc(30px);
         &:hover{
             transform: scale(1.5);
+        }
+        @include _992{
+            display: none;
         }
     }
     
@@ -45,7 +63,7 @@
     &__name{
         
         font-family: 'Roboto', sans-serif;
-        font-size: $baseFontSize + 10px;
+        font-size: rem-calc(26px);
         color: $mainColor;
         font-weight: $baseFontWeight + 300;
         line-height: $lineHeight + 15px;
@@ -59,7 +77,7 @@
     }
     &__position{
         color: $titleColor;
-        font-size: $baseFontSize +4;
+        font-size: rem-calc(20px);
         margin-bottom: 30px;
     }
     &__link{
@@ -78,6 +96,10 @@
         font-size: $baseFontSize - 4px;
         line-height: $lineHeight;
         margin-bottom: 10px;
+
+        @include _375{
+            font-size: $baseFontSize - 2;
+        }
     }
     &__separation{
         @extend .separator;
@@ -97,14 +119,16 @@
     }
 }
 .image{
+    position: relative;
+
     &__first{
         width: 100px;
         height: 100px;
         border-top: 1px solid $secondColor;
         border-left: 1px solid $secondColor;
         position: absolute;
-        margin-top: -20px;
-        margin-left: -20px;
+        top: -20px;
+        left: -20px;
     }
     &__second{
         width: 100px;
@@ -112,17 +136,17 @@
         border-top: 1px solid $secondColor;
         border-right: 1px solid $secondColor;
         position: absolute;
-        margin-top: -20px;
-        right: 960px;
+        top: -20px;
+        right: -20px;
     }
-    &__third{
+    &__third{  
         width: 100px;
         height: 100px;
         border-bottom: 1px solid $secondColor;
         border-right: 1px solid $secondColor;
         position: absolute;
-        bottom: 78px;
-        right: 960px;
+        bottom: -20px;
+        right: -20px;
     }
     &__fourth{
         width: 100px;
@@ -130,8 +154,12 @@
         border-bottom: 1px solid $secondColor;
         border-left: 1px solid $secondColor;
         position: absolute;
-        bottom: 78px;
-        margin-left: -20px;
+        bottom: -20px;
+        left: -20px;
+    }
+    &__person img{
+        width: 100%;
+        height: auto;
     }
 }
 .more{
