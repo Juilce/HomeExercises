@@ -1,0 +1,95 @@
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header{
+    height: 1072px;
+    background-image: url(hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.header__information{
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+}
+.info__icon{
+    margin: 0 auto;
+}
+.about{
+    width: 900px;
+    height: 315px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+.about__information{
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+}
+.services{
+    height: 490px;
+    background-image: url(services.jpg);
+    background-repeat: no-repeat;
+    background-position: center;  
+    border: 1px solid #ffffff;  
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+.services__inform{
+    width: 900px;
+    border: 1px solid #ffffff;  
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+.services__information{
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+}
+.do{
+    width: 900px;
+    height: 1180px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+.do__information{
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+}
+.details{
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+.svg-icon{
+    margin-bottom: -100px;
+    margin: 0 auto;
+    margin-right: -200px;
+}
+.images{
+    max-height: 485px;
+}
+.photo{
+    display: flex;
+   
+}
+.contact{
+    width: 900px;
+    height: 290px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 50px;
+}
+.contact__information{
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+}
