@@ -1,0 +1,203 @@
+.gallery{
+    background-color: #FFE92F;
+    max-width: 1500px;
+    min-height: 1540px;
+    margin: 0 auto;
+
+    @include _991{
+        width: inherit;
+        height: auto;
+    } 
+
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    width: 1175px;
+    height: 1215px;
+    display: flex;
+    margin: 0 auto;
+
+    @include _991{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        height: auto;
+    } 
+}
+.headerg{
+    width: 590px;
+    height: 190px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+     
+    @include _768{
+        width: inherit;
+    } 
+
+    &__name{
+        font-size: 70px;
+        margin-bottom: -10px;
+
+        @include _768{
+            font-size: 45px;
+            padding-bottom: 5%;
+        }
+        @include _375{
+            font-size: 35px;
+            padding-bottom: 3%;
+        }
+    } 
+    &__describe{
+        font-size: 20px;
+
+        @include _768{
+            font-size: 17px;
+        }
+        @include _375{
+            font-size: 13px;
+        }
+    }
+}
+.photos{
+    width: 1175px;
+    height: 980px;
+    display: flex;
+
+    @include _991{
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+.ona{
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+}
+.topa{
+
+    &__biggest{
+        @include _991{
+            width: inherit;
+        }
+        @include _768{
+            width: 525px;
+            height: auto;
+    
+        }
+        @include _560{
+            width: 380px;
+            height: auto;
+        }
+        @include _375{
+            margin-top: -50px;
+            width: 340px;
+            height: auto;
+        }
+    }
+    
+    &__special{
+    display: flex;
+    width: 700px;
+    margin-top: 10px;
+
+    @include _991{
+        width: 400px;
+        height: auto;
+        }
+    @include _768{
+        display: flex;
+        flex-direction: column;
+        width: 345px;
+        height: auto;
+        margin-left: 100px;
+    }
+    @include _560{
+        display: flex;
+        flex-direction: row;
+        width: 200px;
+        height: auto;
+        margin-left: 0px;
+    }
+    @include _375{
+        display: flex;
+        flex-direction: row;
+        width: 165px;
+        height: auto;
+    }
+    }
+    @include _768{
+        width: inherit;
+        height: auto;   
+}
+}
+.twa{
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    margin-right: 10px;
+
+    @include _375{
+        margin-right: 0px;
+    }
+}
+.downa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px; 
+    margin-left: 10px;
+
+    &__item{
+        width: 100%;
+        max-width: 345px;
+        height: auto;
+    }
+    @include _991{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: inherit;
+        margin-left: 55px;
+    }
+    @include _768{
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
+        margin-left: 0px;
+    }
+    @include _560{
+        width: 180px;
+        height: auto;
+    }
+    @include _375{
+        width: 150px;
+        height: auto;
+        margin-left: 0px;
+    }
+    
+}
+
+
+.btn{
+    margin: 0 auto;
+    margin-top: 100px;
+
+    &__view{
+        color: #ffffff;
+        background-color: #5585A2;
+        padding: 10px 30px;
+    }
+    
+    @include _560{
+        margin-top: -400px;
+    }
+
+    @include _375{
+        margin-top: -500px;
+    }
+}
