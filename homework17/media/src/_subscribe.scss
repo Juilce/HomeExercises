@@ -1,0 +1,93 @@
+.subscribe{
+    background-image: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1500px;
+    min-height: 500px;
+}
+.sending{
+    max-width: 775px;
+    height: 200px;
+    margin-left: 100px;
+    padding-top: 100px;
+   
+    @include _560{
+        width: inherit;
+        height: auto;
+        margin-left: 10px;
+    }  
+}
+.heada{
+    max-width: 570px;
+    height: 105px;
+    
+    &__tit{
+        font-size: 30px;
+        
+        @include _768{
+            font-size: 20px;
+            margin: 0 auto;
+        }
+    }
+    @include _768{
+        width: inherit;
+    }
+    
+}
+.formus{
+    &__added{
+        display: flex;
+        border: none;
+        justify-content: space-between;
+        @include _768{
+            margin-top: 35px;
+        }
+    
+        @include _375{
+            margin-top: 45px;
+            margin-left: -10px;
+        }
+    }
+   
+    &__subscribe{
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #96B92C;
+        height: 60px;
+        padding: 0px 20px;
+        margin-top: 33px;
+        
+        @include _768{
+            font-size: 10px;
+            width: inherit;
+            height: 35px;
+            padding: 0px 10px;
+            margin: 0 auto;
+        }
+       
+    }
+    @include _768{
+        width: inherit;
+    }
+}
+
+.inpute{
+    width: 570px;
+    height: 60px;
+    margin-left: -10px;
+    margin-top: 30px;
+    font-size: 20px;
+
+    @include _768{
+        width: inherit;
+        height: 35px;
+        margin: 0 auto;
+    }
+    @include _375{
+        width: 200px;
+        height: 30px;
+    }
+}
+
+
