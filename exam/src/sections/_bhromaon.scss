@@ -1,0 +1,225 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    color: $baseColor;
+    font-family: $fontMain;
+}
+.bhromaon{
+    background-image: url(image/Image1.jpg);
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 740px;
+    color: $baseColor;
+
+    &__wrapper{
+        max-width: 1110px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 200px;
+        @include _768{
+            width: inherit;
+            height: auto;
+        }
+    }
+
+    &__box{
+        width: 650px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        @include _768{
+            width: inherit;
+            height: auto;
+        }
+    }  
+    &__logo{
+        font-size: rem-calc(48px);
+
+        @include _768{
+            font-size: rem-calc(35px);
+        }
+    }
+    &__text{
+        font-size: rem-calc(22px);
+        margin-top: -20px;
+        margin-bottom: 40px;
+        letter-spacing: 5px;
+
+        @include _768{
+            font-size: rem-calc(18px);
+        }
+    }
+    &__form{
+        width: 100%;
+        display: flex;
+        @include _768{
+            width: inherit;
+            height: auto;
+        }
+    }
+    &__down{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__scroll{
+        letter-spacing: 5px;
+        font-size: rem-calc(14px);
+    }
+    &__icon{
+        color: $baseColor;
+        font-size: rem-calc(20px);
+        font-weight: light;
+        height: 200px;
+        margin-top: -5px;
+
+        &:hover{
+            font-size: rem-calc(40px);
+        }
+    }   
+}
+.forma{
+    &__field{
+        border: none;
+        position: relative;
+        
+    }
+    &__search{
+        width: 500px;
+        height: 56px;
+        left: 0;
+        border: 1px solid $baseColor;
+        position: absolute;
+        text-align: center;
+       
+        @include _768{
+            width: 300px;
+            position: relative;
+            margin: 0 auto;
+        }
+    }
+    &__btn{
+        color: #ffffff;
+        width: 150px;
+        height: 60px;
+        background-color: #336699;
+        border: 1px solid $baseColor;
+        position: absolute;
+        right: 0;        
+        @include _768{
+            width: inherit;
+            position: relative;
+            margin: 0 auto;
+        }
+    }
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    &__icon{
+        width: 20px;
+        height: 20px;
+    }
+}
+.navigation{
+    min-height: 80px;
+    width: 100%;
+    background-color: $btnColor;
+    @include _768 {
+        order: -1;
+    }
+}
+.nav{
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+    justify-content: space-between;
+    @include _768{
+        border-bottom: 1px solid #000000;
+    }
+    &__title{
+        font-size: rem-calc(24px);
+        padding-top: 10px;
+        margin-bottom: -10px;
+    }
+    &__box {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    &__toggle,
+    &__btn {
+        display: none;
+    }
+    &__btn{
+        padding: 28px 20px;
+        @include _768 {
+            display: block;
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+            &:hover{
+                color: $secondColor;
+            }
+        }
+    }
+
+    &__toggle{
+        &:checked + .nav__list {
+            visibility: visible;
+            background: $btnColor;
+        }
+    }
+
+    &__list{
+        padding-bottom: 25px;
+        margin-top: -25px;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding-left: 0;
+
+        @include _768 {
+            position: absolute;
+            flex-direction: column;
+            visibility: hidden;
+            width: 100%;
+            background: $btnColor;
+            margin: 0;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+    }
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $baseColor;
+        font-size: rem-calc(14px);
+        &:hover,
+        &:focus {
+            color: $secondColor;
+        }
+        @include _768{
+            font-size: rem-calc(20px);
+            padding-top: 5px;
+        }
+    }
+    &__item {
+        @include _768 {
+            margin-left: 40px;
+        }
+        & + & {
+            margin-left: 40px;
+        }
+    }
+}
+
+
+
